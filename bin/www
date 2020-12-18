@@ -34,12 +34,11 @@ db().then(() =>{
   Player.findOne().then((player) => {
     if (!player) {
       const player = new Player({
-        name: 'jean-miche',
+        name: 'jean-michel',
         score: 42
       })
       player.save()
     }
-    console.log(player);
   })
   console.log("Serveur démarré, base de donnée connecté");
   server.listen(port);

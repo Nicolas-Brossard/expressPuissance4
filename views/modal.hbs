@@ -1,4 +1,3 @@
-
     <div class="modal draw hidden">
       <div class="container">
         <div class="modal-dialog">
@@ -60,8 +59,7 @@
         </div>
       </div>
     </div>
-    <header>
-      <div class="modal robot" id="choice">
+          <div class="modal robot" id="choice">
         <div class="container">
           <div class="modal-dialog">
             <div class="modal-content">
@@ -112,21 +110,23 @@
                 </h5>
               </div>
               <div class="modal-body">
-                <form method="POST" action="#" id="savePlayer">
+                <form method="GET" onsubmit="return false;">
                   <div>
-                    <label for="human">Prénom joueur 1 ?</label>
+                    <label for="human1">Prénom joueur 1 ?</label>
                     <input
-                      name="human"
-                      id="human"
+                      name="human1"
+                      id="human1"
                       placeholder="joueur 1"
+                      value=""
                     />
                   </div>
                   <div>
-                    <label for="human">Prénom joueur 2 ?</label>
+                    <label for="human2">Prénom joueur 2 ?</label>
                     <input
-                      name="human"
-                      id="human"
+                      name="human2"
+                      id="human2"
                       placeholder="joueur 2"
+                      value=""
                     />
                   </div>
                   <div>
@@ -141,74 +141,3 @@
           </div>
         </div>
       </div>
-      <h1>Puissance 4</h1>
-      <br /><br /><br />
-    </header>
-    <h2 id="Joueur"></h2>
-    <div id="game">
-      <table>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-        <tr>
-          <td data-column="0"></td>
-          <td data-column="1"></td>
-          <td data-column="2"></td>
-          <td data-column="3"></td>
-          <td data-column="4"></td>
-          <td data-column="5"></td>
-          <td data-column="6"></td>
-        </tr>
-      </table>
-    </div>
-        <br><br>
-    <table id="Score">
-      {{#each Score}}
-      <tr>
-        <td>{{this.name}}</td>
-        <td>{{this.score}}</td>
-      </tr>
-      {{/each}}
-    </table>

@@ -1,11 +1,16 @@
-var express = require('express');
-var router = express.Router();
+const express = require('express');
+const router = express.Router();
+const playerController = require('../controllers/playerController')
 
-const Score = [{'player':'Premier', 'score':3},{'player':'Deuxième', 'score':5},{'player':'Troisième', 'score':9}]
+
 
 /* GET home page. */
-router.get('/', function(req, res, next) {
-  res.render('index', { Score: Score });
+router.get('/', async (req, res, next) => {
+  res.render('index', { Score: await playerController.getAllPlayer() });
+});
+router.post('/saveplayer', async (req, res, next) => {
+  const users = await playerController.saveAllPlayer(req, res);
+  res.status(200).send(users)
 });
 
 module.exports = router;

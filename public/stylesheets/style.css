@@ -17,9 +17,11 @@ h1 {
 }
 
 #game table {
-  border: 3px blue outset;
+  /* border: 3px blue outset; */
   background-color: blue;
   margin: auto;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
 }
 #game td {
   width: 2cm;
