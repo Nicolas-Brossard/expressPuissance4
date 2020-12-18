@@ -7,6 +7,7 @@ router.get('/', async (req, res, next) => {
   res.render('index', { Score: await playerController.getAllPlayer() });
 });
 router.post('/saveplayer', async (req, res, next) => {
+  console.log(req.body);
   const users = await playerController.saveAllPlayer(req, res);
   res.status(200).send(users);
 });

@@ -9,7 +9,9 @@ h1 {
   padding-top: 2%;
   padding-bottom: 2%;
   margin: 0;
-  background-color: black;
+  background-color: rgb(8, 63, 13);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
 }
 
 #Joueur {
@@ -18,17 +20,18 @@ h1 {
 
 #game table {
   /* border: 3px blue outset; */
-  background-color: blue;
+  background-color: black;
   margin: auto;
   border-top-left-radius: 5%;
   border-top-right-radius: 5%;
+  border-collapse: collapse;
 }
 #game td {
+  border: none;
   width: 2cm;
   height: 2cm;
   margin: 0px;
   padding: 0px;
-  border: 2px rgb(20, 77, 23) inset;
   border-radius: 2cm;
   background-color: white;
   cursor: pointer;
