@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="modal player1 hidden">
+    <div class="modal player1 hidden" id="player1win">
       <div class="container">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -31,15 +31,23 @@
               La partie est terminée, Joueur 1 à gagné ! 🍾
             </div>
             <div class="modal-footer">
-              <button type="button" id="reload" class="btn btn-primary">
-                recommencer
-              </button>
+              <form method="POST" action="#" id="player1win">
+                <button type="submit" id="reload" class="btn btn-primary">
+                      <input
+                      name="human"
+                      id="human"
+                      value="player1"
+                      type="hidden"
+                    />
+                  recommencer
+                </button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="modal player2 hidden">
+    <div class="modal player2 hidden" id="player2win">
       <div class="container">
         <div class="modal-dialog">
           <div class="modal-content">
@@ -52,9 +60,17 @@
               La partie est terminée, Joueur 2 à gagné ! 🍾
             </div>
             <div class="modal-footer">
-              <button type="button" id="reload" class="btn btn-primary">
-                recommencer
-              </button>
+              <form method="POST" action="#" id="player1win">
+                <button type="submit" id="reload" class="btn btn-primary">
+                      <input
+                      name="human"
+                      id="human"
+                      value="player2"
+                      type="hidden"
+                    />
+                  recommencer
+                </button>
+              </form>
             </div>
           </div>
         </div>
