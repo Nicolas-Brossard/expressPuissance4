@@ -207,13 +207,10 @@
     </div>
         <br><br>
     <table id="Score">
+      {{#each Array}}
       <tr>
-        <td>Joueur 1</td>
-        <td>4</td>
+        <td>{{this.player}}</td>
+        <td>{{this.score}}</td>
       </tr>
-      <tr>
-        <td>Ordinateur</td>
-        <td>2</td>
-      </tr>
+      {{/each}}
     </table>
-
