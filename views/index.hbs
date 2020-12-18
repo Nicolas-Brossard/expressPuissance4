@@ -1,0 +1,208 @@
+
+    <div class="modal draw hidden">
+      <div class="container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                👏 STOP Pas de gagnant pour aujourd'hui 👏
+              </h5>
+            </div>
+            <div class="modal-body">La partie est terminée 🍾</div>
+            <div class="modal-footer">
+              <button type="button" id="reload" class="btn btn-primary">
+                recommencer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal player1 hidden">
+      <div class="container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                👏 Vous avez gagné 👏
+              </h5>
+            </div>
+            <div class="modal-body">
+              La partie est terminée, Joueur 1 à gagné ! 🍾
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="reload" class="btn btn-primary">
+                recommencer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal player2 hidden">
+      <div class="container">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">
+                👏 Le joueur 2 a gagné 👏
+              </h5>
+            </div>
+            <div class="modal-body">
+              La partie est terminée, Joueur 2 à gagné ! 🍾
+            </div>
+            <div class="modal-footer">
+              <button type="button" id="reload" class="btn btn-primary">
+                recommencer
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <header>
+      <div class="modal robot" id="choice">
+        <div class="container">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  🤩 Commencer une partie 🤩
+                </h5>
+              </div>
+              <div class="modal-body">
+                <form method="GET" onsubmit="return false;">
+                  <div>
+                    <label for=""></label>
+                    <button
+                      type="submit"
+                      name="choose"
+                      class="btn btn-primary"
+                      id="playHuman"
+                      value="pvp"
+                    >
+                      Joueur contre humain
+                    </button>
+                  </div>
+                  <br />
+                  <div>
+                    <button
+                      type="submit"
+                      class="btn btn-primary"
+                      name="choose"
+                      id="playRobot"
+                      value="pve"
+                    >
+                      Joueur contre I.A
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal begin hidden" id="chooseName">
+        <div class="container">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">
+                  🤩 Commencer une partie 🤩
+                </h5>
+              </div>
+              <div class="modal-body">
+                <form method="GET" onsubmit="return false;">
+                  <div>
+                    <label for="human1">Prénom joueur 1 ?</label>
+                    <input
+                      name="human1"
+                      id="human1"
+                      placeholder="joueur 1"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <label for="human2">Prénom joueur 2 ?</label>
+                    <input
+                      name="human2"
+                      id="human2"
+                      placeholder="joueur 2"
+                      value=""
+                    />
+                  </div>
+                  <div>
+                    <br />
+                    <button class="btn btn-primary">
+                      Commencer la partie !
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h1>Puissance 4</h1>
+      <br /><br /><br />
+    </header>
+    <h2 id="Joueur"></h2>
+    <div id="game">
+      <table>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+        <tr>
+          <td data-column="0"></td>
+          <td data-column="1"></td>
+          <td data-column="2"></td>
+          <td data-column="3"></td>
+          <td data-column="4"></td>
+          <td data-column="5"></td>
+          <td data-column="6"></td>
+        </tr>
+      </table>
+    </div>
+
